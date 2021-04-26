@@ -13,7 +13,7 @@ with open(localdate +'.txt',"r") as f1:
             hum = float(m[0])
             tem = float(m[1])
             pm25 = int(m[2])
-            fo = float(m[3])/100
+            fo = float(m[3])/1000
             if fo > 0.6 or hum < 20 or pm25 > 80:
                 tag = 'N'
             else:
